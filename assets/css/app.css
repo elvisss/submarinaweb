@@ -1,0 +1,58 @@
+.main-image {
+    min-width: 1000px;
+}
+
+.default {
+    fill: #189918;
+}
+
+.alarm {
+    fill: #911818;
+}
+
+.alarm.pulse {
+    animation: pulseAlarm 1s ease infinite;
+}
+
+.trouble {
+    fill: #e79f1b;
+}
+
+.trouble.pulse {
+    animation: pulseTrouble 1s ease infinite;
+}
+
+.alarm.trouble.pulse {
+    animation: pulseAlarmTrouble 1s ease infinite;
+}
+
+@keyframes pulseAlarm {
+    0%, 100% {
+      fill: #eb8888;
+    }
+    50% {
+      fill: #911818;
+    }
+}
+
+@keyframes pulseTrouble {
+    0%, 100% {
+      fill: #dda94b;
+    }
+    50% {
+      fill: #b67500;
+    }
+}
+
+@keyframes pulseAlarmTrouble {
+    0%, 100% {
+      fill: #911818;
+    }
+    50% {
+      fill: #b67500;
+    }
+}
+
+.cls-8 {
+    font-family: Arial, Helvetica, sans-serif;
+}
